@@ -1,0 +1,7 @@
+---
+alwaysApply: false
+---
+Align below rules when you create commit message
+  <type>(<scope>): <description>
+  type : [feat, fix, docs, style, refactor, chore] -> You chose suitable one for current change.
+  scope : [class, trigger, page, test, others]
