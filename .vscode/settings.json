@@ -21,5 +21,5 @@
     "**/.exchange_modules_tmp": true,
     ".mule": true
   },
-  "salesforce.einsteinForDevelopers.enableAutocompletions": false
+  "salesforce.einsteinForDevelopers.enableAutocompletions": true
 }

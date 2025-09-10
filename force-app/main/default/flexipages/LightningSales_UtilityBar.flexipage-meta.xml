@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Sales アプリケーションのデフォルトユーティリティバー</description>
+    <description>The default utility bar for the Sales application.</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
@@ -11,7 +11,7 @@
         <name>utilityItems</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Sales アプリケーションのユーティリティバー</masterLabel>
+    <masterLabel>Sales App Utility Bar</masterLabel>
     <template>
         <name>one:utilityBarTemplateDesktop</name>
     </template>

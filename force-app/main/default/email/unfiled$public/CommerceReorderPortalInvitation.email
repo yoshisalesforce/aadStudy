@@ -1,12 +1,11 @@
 <html>
-            {!Receiving_User.FirstName} 様
+            Dear {!Receiving_User.FirstName},
             <p>
-            この再注文ポータルで、{!Organization.Name} で繰り返し注文する簡単な方法を確認してください。過去の注文の表示、数量の変更、新しい注文の実行、注文状況の表示を行うことができます。
+            Check out this reorder portal for a simpler way to place repeat orders with {!Organization.Name}. You can view your past orders, modify quantities, place new orders, and view order statuses.
             </p>
             <p>
-            次のリンクをクリックしてアクセス: <a href={!Community_URL}>{!Community_Name}</a>
-            ユーザー名: {!Receiving_User.Username}
+            Click the link for access: <a href={!Community_URL}>{!Community_Name}</a>
             </p>
-            今後ともよろしくお願いいたします。<br>
-            {!User.Name}
+            Regards,<br>
+            {!Sending_User.Name}
             </html>

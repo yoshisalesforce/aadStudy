@@ -1,0 +1,14 @@
+<!-- c-input -->
+<template>
+  <div>
+      Percentage:
+      <input
+          type="number"
+          min="0"
+          max="100"
+          value={percentage}
+          onchange={handlePercentageChange}
+      ></input>
+      <c-chart percentage={percentage}></c-chart>
+  </div>
+</template>

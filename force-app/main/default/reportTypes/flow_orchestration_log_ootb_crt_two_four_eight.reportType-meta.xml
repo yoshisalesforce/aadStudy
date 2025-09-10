@@ -4,8 +4,8 @@
     <baseObject>FlowOrchestrationLog</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>作成されたオーケストレーション実行ログと、関連付けられたオーケストレーション実行で起きたことを確認できます。</description>
-    <label>オーケストレーション実行ログ (Spring &apos;24)</label>
+    <description>Find out which orchestration run logs were created and what happened in their associated orchestration runs.</description>
+    <label>Orchestration Run Logs Spring &apos;24</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -57,6 +57,6 @@
             <field>Comments</field>
             <table>FlowOrchestrationLog</table>
         </columns>
-        <masterLabel>オーケストレーション実行ログ</masterLabel>
+        <masterLabel>Orchestration Run Log</masterLabel>
     </sections>
 </ReportType>

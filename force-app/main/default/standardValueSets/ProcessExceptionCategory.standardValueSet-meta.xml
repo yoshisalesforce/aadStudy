@@ -27,18 +27,18 @@
         <label>Invoicing</label>
     </standardValue>
     <standardValue>
-        <fullName>Order To Asset</fullName>
+        <fullName>Place Order</fullName>
         <default>false</default>
-        <label>Order To Asset</label>
+        <label>Place Order</label>
     </standardValue>
     <standardValue>
-        <fullName>Order Item Summary To Asset</fullName>
+        <fullName>Catalog Syndication</fullName>
         <default>false</default>
-        <label>Order Item Summary To Asset</label>
+        <label>Catalog Syndication</label>
     </standardValue>
     <standardValue>
-        <fullName>Order To Billing Schedule</fullName>
+        <fullName>Subscription Payment</fullName>
         <default>false</default>
-        <label>Order To Billing Schedule</label>
+        <label>Subscription Payment</label>
     </standardValue>
 </StandardValueSet>

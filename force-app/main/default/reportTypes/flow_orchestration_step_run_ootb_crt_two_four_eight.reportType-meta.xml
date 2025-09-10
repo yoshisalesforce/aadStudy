@@ -4,8 +4,8 @@
     <baseObject>FlowOrchestrationStepInstance</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>作成されたオーケストレーションステップ実行と、各実行の現在の状況を確認できます。</description>
-    <label>オーケストレーションステップ実行 (Spring &apos;24)</label>
+    <description>Find out which orchestration step runs were created and the current status of each run.</description>
+    <label>Orchestration Step Runs Spring &apos;24</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>
@@ -62,6 +62,6 @@
             <field>StepType</field>
             <table>FlowOrchestrationStepInstance</table>
         </columns>
-        <masterLabel>オーケストレーションステップ実行</masterLabel>
+        <masterLabel>Orchestration Step Runs</masterLabel>
     </sections>
 </ReportType>

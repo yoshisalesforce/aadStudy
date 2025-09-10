@@ -33,9 +33,9 @@
     <columns>
         <field>FlowOrchestrationStepInstance$StepType</field>
     </columns>
-    <description>作成されたオーケストレーションステップ実行と、各実行の現在の状況は?</description>
+    <description>What orchestration step runs have been created and what&apos;s the current status of each run?</description>
     <format>Tabular</format>
-    <name>サンプルレポート: オーケストレーションステップ実行</name>
+    <name>Sample Report: Orchestration Step Runs</name>
     <params>
         <name>co</name>
         <value>1</value>

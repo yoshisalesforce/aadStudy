@@ -4,11 +4,11 @@
     <baseObject>FlowOrchestrationInstance</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>作成されたオーケストレーション実行を確認できます。</description>
-    <label>オーケストレーション実行 (Spring &apos;24)</label>
+    <description>Find out which orchestration runs were created.</description>
+    <label>Orchestration Runs Spring &apos;24</label>
     <sections>
         <columns>
-            <checkedByDefault>false</checkedByDefault>
+            <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
             <table>FlowOrchestrationInstance</table>
         </columns>
@@ -47,6 +47,6 @@
             <field>Id</field>
             <table>FlowOrchestrationInstance</table>
         </columns>
-        <masterLabel>オーケストレーション実行</masterLabel>
+        <masterLabel>Orchestration Runs</masterLabel>
     </sections>
 </ReportType>

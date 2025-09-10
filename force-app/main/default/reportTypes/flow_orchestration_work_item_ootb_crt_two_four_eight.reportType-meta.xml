@@ -4,12 +4,12 @@
     <baseObject>FlowOrchestrationStepInstance</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>作成されたオーケストレーション作業項目、関連付けられた割り当て先、各作業項目の現在の状況を確認できます。</description>
+    <description>Find out which orchestration work items were created, who&apos;s the associated assignee, and what&apos;s the current status of each work item.</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>FlowOrchestrationWorkItems</relationship>
     </join>
-    <label>オーケストレーション作業項目 (Spring &apos;24)</label>
+    <label>Orchestration Work Items Spring &apos;24</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>
@@ -38,13 +38,13 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>割り当て先User</displayNameOverride>
+            <displayNameOverride>Assigned User</displayNameOverride>
             <field>Assignee.User</field>
             <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>割り当て先グループまたはキュー</displayNameOverride>
+            <displayNameOverride>Assigned Group or Queue</displayNameOverride>
             <field>Assignee.Group</field>
             <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
         </columns>
@@ -58,27 +58,27 @@
             <field>Id</field>
             <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
         </columns>
-        <masterLabel>オーケストレーション作業項目</masterLabel>
+        <masterLabel>Orchestration Work Items</masterLabel>
     </sections>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <displayNameOverride>オーケストレーションステップ実行:Name</displayNameOverride>
+            <displayNameOverride>Orchestration Step Run: Name</displayNameOverride>
             <field>Name</field>
             <table>FlowOrchestrationStepInstance</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>オーケストレーションステップ実行:Label</displayNameOverride>
+            <displayNameOverride>Orchestration Step Run: Label</displayNameOverride>
             <field>Label</field>
             <table>FlowOrchestrationStepInstance</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>オーケストレーションステップ実行:Status</displayNameOverride>
+            <displayNameOverride>Orchestration Step Run: Status</displayNameOverride>
             <field>Status</field>
             <table>FlowOrchestrationStepInstance</table>
         </columns>
-        <masterLabel>オーケストレーションステップ実行</masterLabel>
+        <masterLabel>Orchestration Step Runs</masterLabel>
     </sections>
 </ReportType>

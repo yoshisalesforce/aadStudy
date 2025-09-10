@@ -24,9 +24,9 @@
     <columns>
         <field>FlowOrchestrationInstance$Id</field>
     </columns>
-    <description>作成されたオーケストレーション実行と、各実行の現在の状況は?</description>
+    <description>What orchestration runs have been created and what&apos;s the current status of each run?</description>
     <format>Tabular</format>
-    <name>サンプルレポート: オーケストレーション実行</name>
+    <name>Sample Report: Orchestration Runs</name>
     <params>
         <name>co</name>
         <value>1</value>

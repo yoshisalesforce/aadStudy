@@ -36,9 +36,9 @@
     <columns>
         <field>FlowOrchestrationStepInstance$Status</field>
     </columns>
-    <description>作成されたオーケストレーション作業項目と、各作業項目の現在の状況は?</description>
+    <description>What orchestration work items were created and what&apos;s the current status of each work item?</description>
     <format>Tabular</format>
-    <name>サンプルレポート: オーケストレーション作業項目</name>
+    <name>Sample Report: Orchestration Work Items</name>
     <params>
         <name>co</name>
         <value>1</value>

@@ -15,7 +15,7 @@
     <enableFileShareSetByRecord>false</enableFileShareSetByRecord>
     <enableFilesUsrShareNetRestricted>false</enableFilesUsrShareNetRestricted>
     <enableJPGPreviews>false</enableJPGPreviews>
-    <enableLWCFileUpload>true</enableLWCFileUpload>
+    <enableLWCFileUpload>false</enableLWCFileUpload>
     <enableLWCFileUploadInFlows>false</enableLWCFileUploadInFlows>
     <enableLibraryManagedFiles>false</enableLibraryManagedFiles>
     <enableSiteGuestUserToUploadFiles>false</enableSiteGuestUserToUploadFiles>

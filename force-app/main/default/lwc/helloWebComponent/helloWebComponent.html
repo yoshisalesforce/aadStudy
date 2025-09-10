@@ -1,3 +1,17 @@
 <template>
-  <input value={message}></input>
+  <lightning-card title="Bike Details!" lwc:if={ready}>
+    <lightning-layout horizontal-align="spread" vertical-align="start">
+      <lightning-layout-item size="6" onchange={handleFieldChange}>
+        <lightning-input type="text" label="Name" value={name} data-field="name"></lightning-input>
+        <lightning-input type="text" label="Description" value={description} data-field="description"></lightning-input>
+        <lightning-input type="text" label="Category" value={category} data-field="category"></lightning-input>
+        <lightning-input type="text" label="Material" value={material} data-field="material"></lightning-input>
+        <lightning-input type="text" label="Price" value={price} data-field="price"></lightning-input>
+        <lightning-input type="text" label="Picture URL" value={pictureUrl} data-field="pictureUrl"></lightning-input>
+        </lightning-layout-item>
+      </lightning-layout>
+  </lightning-card>
+  <template lwc:else>
+    <div id="waiting">Loading…</div>
+  </template>
 </template>

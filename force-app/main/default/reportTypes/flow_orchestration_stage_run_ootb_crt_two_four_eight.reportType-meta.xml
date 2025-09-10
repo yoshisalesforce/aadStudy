@@ -4,8 +4,8 @@
     <baseObject>FlowOrchestrationStageInstance</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>作成されたオーケストレーションフェーズ実行と、各実行の現在の状況を確認できます。</description>
-    <label>オーケストレーションフェーズ実行 (Spring &apos;24)</label>
+    <description>Find out which orchestration stage runs were created and the current status of each run.</description>
+    <label>Orchestration Stage Runs Spring &apos;24</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>
@@ -52,6 +52,6 @@
             <field>Id</field>
             <table>FlowOrchestrationStageInstance</table>
         </columns>
-        <masterLabel>オーケストレーションフェーズ実行</masterLabel>
+        <masterLabel>Orchestration Stage Runs</masterLabel>
     </sections>
 </ReportType>

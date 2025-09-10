@@ -30,9 +30,9 @@
     <columns>
         <field>FlowOrchestrationLog$Comments</field>
     </columns>
-    <description>作成されたオーケストレーション実行ログと、関連付けられたオーケストレーション実行で起きたことは?</description>
+    <description>What orchestration run logs were created and what happened in their associated orchestration runs?</description>
     <format>Tabular</format>
-    <name>サンプルレポート: オーケストレーション実行ログ</name>
+    <name>Sample Report: Orchestration Run Logs</name>
     <params>
         <name>co</name>
         <value>1</value>
