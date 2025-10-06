@@ -2,14 +2,17 @@
 public class AccountServicesTest {
     @TestSetup
     static void makeData(){
-        Account ac1 = new Account(Name = 'Test Account1', AnnualRevenue = 1);
-        Account ac2 = new Account(Name = 'Test Account2', AnnualRevenue = 1);
-        List<Account> acList = new List<Account>{ac1, ac2};
+        Integer testSize = 3;
+        List<Account> acList = new List<Account>();
+        for(Integer  i = 0; i < testSize; i++){
+            Account ac = new Account(Name = 'Test Account' + i, AnnualRevenue = 1);
+            acList.add(ac);
+        }
         insert acList;
     }
     @isTest
-    static void testPrimaryAccountChecker(){
-        List<Account> acList = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name = 'Test Account1' OR  Name = 'Test Account2'LIMIT 2];
+    static void testPrimaryAccountChecker1(){
+        List<Account> acList = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name like 'Test Account%'];
         Test.startTest();
         acList[0].AnnualRevenue = 2;
         acList[1].AnnualRevenue = 10000000;
@@ -18,5 +21,17 @@ public class AccountServicesTest {
         List<Account> updatedAccounts = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Id IN :acList];
         System.assertNotEquals(updatedAccounts[0].Name, '*Test Account1');
         System.assertEquals(updatedAccounts[1].Name, '*Test Account2');
+    }
+    @isTest
+    static void testPrimaryAccountChecker2(){
+        List<Account> acList = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name like 'Test Account%' limit 1];
+        Test.startTest();
+        acList[0].AnnualRevenue = 11;
+        try {
+            update acList;
+        } catch (Exception e ) {
+            system.assert(e.getMessage().contains('プライマリ取引先判定でエラーが発生しました。'));
+        }
+        Test.stopTest();
     }
 }
