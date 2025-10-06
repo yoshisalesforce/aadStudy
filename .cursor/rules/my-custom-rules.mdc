@@ -1,5 +1,5 @@
 ---
-alwaysApply: false
+alwaysApply: true
 ---
 Align below rules when you create commit message
   <type>(<scope>): <description>

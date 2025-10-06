@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="取引先作成" icon-name="standard:account">
+    <lightning-record-edit-form object-api-name={accountObject} onsuccess={handleAccountCreated}>
+      <template for:each={accList} for:item="acc">
+        <div class="slds-grid" key={acc.Id}>
+          <lightning-input class="slds-col" label="取引先名" value={nameField}></lightning-input>
+          <lightning-input class="slds-col" label="Web" value={websiteField}></lightning-input>
+        </div>
+      </template>
+      <lightning-button variant="brand" type="submit" label="Create"></lightning-button>
+    </lightning-record-edit-form>
+  </lightning-card>
+</template>

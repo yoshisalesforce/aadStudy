@@ -1,5 +1,5 @@
 trigger AccountTrigger on Account (after update) {
   if(AccountServices.firstRun){
-    AccountServices.PrimaryAccountChecker(Trigger.new);
+    AccountServices.PrimaryAccountChecker(Trigger.newMap.keySet());
   }
 }
