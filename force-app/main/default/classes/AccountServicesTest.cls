@@ -24,7 +24,7 @@ public class AccountServicesTest {
     }
     @isTest
     static void testPrimaryAccountChecker2(){
-        List<Account> acList = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name like 'Test Account%' limit 1];
+        List<Account> acList = [SELECT Id, Name, AnnualRevenue FROM Account WHERE Name like 'Test Account%'];
         Test.startTest();
         acList[0].AnnualRevenue = 11;
         try {
